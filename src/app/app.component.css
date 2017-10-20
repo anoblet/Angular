@@ -1,0 +1,15 @@
+app-root {
+    display: flex;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.flex-1 {
+    flex: 1;
+}
+.bg-grey {
+    background: #303030;
+}
