@@ -1,4 +1,4 @@
-import { RouterModule, Routes } from '@angular/router';
+import {RouterModule, Routes } from '@angular/router';
 import {MatCardModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
@@ -11,11 +11,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
-  { path: 'hero/:id',      component: AppComponent },
+  { path: 'home',      component: HomeComponent },
+  { path: 'login',      component: LoginComponent },
   { path: '',
-    redirectTo: '/heroes',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent }
@@ -24,7 +28,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ToolbarComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

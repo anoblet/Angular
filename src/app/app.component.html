@@ -3,14 +3,5 @@
         <mat-card>Simple card</mat-card>
         <router-outlet></router-outlet>
     </div>
-    <mat-toolbar color="primary" class="text-center">
-        <div class="flex-1">
-            <button mat-icon-button [matMenuTriggerFor]="menu">
-                <mat-icon aria-label="Example icon-button with a heart icon">menu</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item>Home</button>
-            </mat-menu>
-        </div>
-    </mat-toolbar>
+<app-toolbar></app-toolbar>
 </div>
