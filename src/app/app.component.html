@@ -1,21 +1,31 @@
-<div class="container">
-    <div class="bg-grey flex-1">
-    <mat-sidenav-container class="flex flex-1">
-        <mat-sidenav #sidenav mode="over">
-            <button href="" mat-menu-item (click)="sidenav.toggle()">
-                <mat-icon>home</mat-icon>
-                Home
+<div class="container-fluid col">
+    <mat-toolbar color="primary" class="mat-elevation-z5">
+        <div class="col">
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <i class="material-icons">menu</i>
             </button>
-            <button href="" mat-menu-item (click)="sidenav.toggle()">Register</button>
-            <button href="" mat-menu-item (click)="sidenav.toggle()">3</button>
-        </mat-sidenav>
-        <router-outlet></router-outlet>
-        <button href="" mat-menu-item (click)="sidenav.toggle()">
-            <mat-icon>home</mat-icon>
-            Home
-        </button>
-    </mat-sidenav-container>
+        </div>
+    </mat-toolbar>
+    <div class="row h-100">
+        <mat-sidenav-container class="d-flex col p-0">
+            <mat-sidenav #sidenav mode="over">
+                <button href="" mat-button class="w-100" routerLink="/home" (click)="sidenav.toggle()">
+                    <mat-icon>home</mat-icon>
+                    Home
+                </button>
+                <button href="" mat-button class="w-100" routerLink="/login" (click)="sidenav.toggle()">Login</button>
+                <button href="" mat-button class="w-100" routerLink="/register" (click)="sidenav.toggle()">Register</button>
+            </mat-sidenav>
+            <mat-sidenav-content class="w-100 p-3">
+                <router-outlet></router-outlet>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
     </div>
-
-    <app-toolbar></app-toolbar>
 </div>
+<mat-toolbar color="primary" class="mat-elevation-z5">
+    <div class="col">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <i class="material-icons">menu</i>
+        </button>
+    </div>
+</mat-toolbar>
