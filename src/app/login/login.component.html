@@ -1,25 +1,25 @@
-<form action="<?= PATH; ?>#!/User/Index/Login" method="POST" ng-controller="Form">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <md-input-container>
-          <label>Email</label>
-          <input type="email" name="Email" aria-describedby="emailHelp">
-        </md-input-container>
-        <md-input-container>
-          <input type="Password" name="Password" aria-describedby="emailHelp"
-                 placeholder="Password">
-        </md-input-container>
-        <button class="md-raised md-primary" ng-click="submit()">Login</button>
-        <div class="form-group col-xs-10">
-          <small><?= $Data['Message']; ?></small>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6">Don't have an account? <a href="#!/User/Index/Register">Register</a>
-      </div>
-    </div>
-  </div>
-  <script>
-      // refresh("#top");
-  </script>
-</form>
+<div class="center">
+    <form class="w-50">
+        <mat-card>
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-content>
+                <div class="w-50">
+                    <div class="w-100">
+                        <mat-form-field>
+                            <input matInput type="email" name="Email" placeholder="Email" aria-describedby="emailHelp">
+                        </mat-form-field>
+                    </div>
+                    <div class="w-100">
+                        <mat-form-field>
+                            <input matInput type="Password" name="Password" aria-describedby="emailHelp" placeholder="Password">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-card-actions class="text-center">
+                <button mat-raised-button color="primary">Login</button>
+            </mat-card-actions>
+            <div>Don't have an account? <a routerLink="/register">Register</a></div>
+        </mat-card>
+    </form>
+</div>

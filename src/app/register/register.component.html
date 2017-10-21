@@ -1,3 +1,22 @@
-<p>
-  register works!
-</p>
+<div class="center">
+  <mat-card class="fit-content">
+    <form>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <mat-form-field>
+              <input matInput name="Email" placeholder="Username" aria-describedby="emailHelp">
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput type="Password" name="Password" aria-describedby="emailHelp" placeholder="Password">
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="md-raised md-primary">Register
+            </button>
+          </div>
+          <div class="col-xs-12 col-sm-6">Don't have an account? <a routerLink="/login">Login</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </mat-card>
+</div>

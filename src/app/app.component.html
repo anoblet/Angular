@@ -1,6 +1,21 @@
 <div class="container">
-    <div class="bg-grey flex-1 p-1 ">
+    <div class="bg-grey flex-1">
+    <mat-sidenav-container class="flex flex-1">
+        <mat-sidenav #sidenav mode="over">
+            <button href="" mat-menu-item (click)="sidenav.toggle()">
+                <mat-icon>home</mat-icon>
+                Home
+            </button>
+            <button href="" mat-menu-item (click)="sidenav.toggle()">Register</button>
+            <button href="" mat-menu-item (click)="sidenav.toggle()">3</button>
+        </mat-sidenav>
         <router-outlet></router-outlet>
+        <button href="" mat-menu-item (click)="sidenav.toggle()">
+            <mat-icon>home</mat-icon>
+            Home
+        </button>
+    </mat-sidenav-container>
     </div>
-<app-toolbar></app-toolbar>
+
+    <app-toolbar></app-toolbar>
 </div>

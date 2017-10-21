@@ -2,6 +2,7 @@ import {RouterModule, Routes } from '@angular/router';
 import {MatCardModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material';
+import {MatInputModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 import {MatToolbarModule} from '@angular/material';
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatInputModule,
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
