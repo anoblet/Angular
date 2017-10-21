@@ -13,3 +13,9 @@ app-root {
 .bg-grey {
     background: #303030;
 }
+.content {
+    padding: 1em;
+}
+.p-1 {
+    padding: 1em;
+}
