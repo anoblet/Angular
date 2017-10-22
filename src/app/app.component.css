@@ -1,11 +1,21 @@
-html {
+html, body {
     height: 100%;
 }
 
 body {
-    height: 100%;
     margin: 0;
 }
+
 app-root {
     flex-direction: column;
+}
+
+mat-sidenav-content > * {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+router-outlet {
+    display: none;
 }

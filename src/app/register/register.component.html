@@ -1,22 +1,25 @@
-<div class="center">
-  <mat-card class="fit-content">
-    <form>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
+<div class="col">
+  <form class="col w-50 m-auto">
+    <mat-card>
+      <mat-card-title>Register</mat-card-title>
+      <mat-card-content>
+        <div class="w-50">
+          <div class="w-100">
             <mat-form-field>
-              <input matInput name="Email" placeholder="Username" aria-describedby="emailHelp">
+              <input matInput type="email" name="Email" placeholder="Email" aria-describedby="emailHelp">
             </mat-form-field>
+          </div>
+          <div class="w-100">
             <mat-form-field>
               <input matInput type="Password" name="Password" aria-describedby="emailHelp" placeholder="Password">
             </mat-form-field>
-            <button mat-raised-button color="primary" class="md-raised md-primary">Register
-            </button>
-          </div>
-          <div class="col-xs-12 col-sm-6">Don't have an account? <a routerLink="/login">Login</a>
           </div>
         </div>
-      </div>
-    </form>
-  </mat-card>
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+        <button mat-raised-button color="primary">Register</button>
+      </mat-card-actions>
+      <div>Have an account? <a routerLink="/login">Login</a></div>
+    </mat-card>
+  </form>
 </div>
